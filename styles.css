@@ -2,14 +2,20 @@ body{
     height: 300px;
     width: 250px;
     /* background-color: #414c54; */
-    background-color: #252b2f;
+    background-color: #1F1F1F;
+    font-family: "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
 }
 h2{
-    color: whitesmoke;
+    color: #FFFFFF;
+
 }
 
 #title-div{
     display: flex;
+    align-items: center;
+    gap: 60px;
 
 }
 
@@ -18,7 +24,7 @@ h2{
     flex-direction: column;
     justify-content: flex-start;
     border: white;
-    gap: 7px;
+    gap: 10px;
 
 }
 
@@ -32,4 +38,12 @@ h2{
     justify-content: center;
     align-items: center;
     
+}
+
+#clear-list-btn{
+    background-color: transparent;
+    color: #B0B0B0;
+    height: 30px;
+
+
 }
