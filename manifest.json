@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "MultiClip App",
+  "version": "1.0.0",
+  "description": "Multi-copy clipboard manager that saves multiple copied texts and lets you reuse them anytime.",
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "imgs/dog2.jpg",
+      "48": "imgs/dog2.jpg",
+      "128": "imgs/dog2.jpg"
+    }
+  },
+
+  "icons": {
+    "16": "imgs/dog2.jpg",
+    "48": "imgs/dog2.jpg",
+    "128": "imgs/dog2.jpg"
+  },
+
+  "permissions": ["storage","scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
+
+  

@@ -1,0 +1,35 @@
+body{
+    height: 300px;
+    width: 250px;
+    /* background-color: #414c54; */
+    background-color: #252b2f;
+}
+h2{
+    color: whitesmoke;
+}
+
+#title-div{
+    display: flex;
+
+}
+
+#clips-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: white;
+    gap: 7px;
+
+}
+
+#searchBar-div{
+    border-radius: 10px;
+}
+
+#handler-div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
